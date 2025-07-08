@@ -45,6 +45,13 @@ pipeline {
                     ml-pipeline-image \
                     bash -c "pytest --maxfail=1 --disable-warnings"
                     '''
+
+                    // Run a temporary Docker container and pass env variables securely via --env-file
+                    sh '''
+                    docker run --rm --env-file env.list \
+                    ml-pipeline-image \
+                    bash -c "python app/train.py"
+                    '''
                 }
             }
         }
