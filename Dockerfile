@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3
 
-WORKDIR /homeeee
+WORKDIR /home
 ENV PYTHONPATH=/home
 
 RUN apt-get update
