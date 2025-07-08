@@ -6,6 +6,7 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.pipeline import Pipeline
+import os
 
 # Load data
 def load_data(url):
