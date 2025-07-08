@@ -114,7 +114,8 @@ def run_experiment(experiment_name, data_url, param_grid, artifact_path, registe
     # Create pipeline
     pipe = create_pipeline()
 
-    mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI"))
+    # mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI"))
+    mlflow.set_tracking_uri("https://martper56-mlflow-server.hf.space")
 
     # Set experiment's info 
     mlflow.set_experiment(experiment_name)
