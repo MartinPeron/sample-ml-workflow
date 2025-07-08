@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from the repository
-                git branch: 'main', url: 'https://github.com/JedhaBootcamp/sample-ml-workflow.git'
+                git branch: 'main', url: 'https://github.com/MartinPeron/sample-ml-workflow.git'
             }
         }
 
