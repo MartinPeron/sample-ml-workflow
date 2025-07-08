@@ -113,6 +113,8 @@ def run_experiment(experiment_name, data_url, param_grid, artifact_path, registe
     # Create pipeline
     pipe = create_pipeline()
 
+    mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI"))
+
     # Set experiment's info 
     mlflow.set_experiment(experiment_name)
 
